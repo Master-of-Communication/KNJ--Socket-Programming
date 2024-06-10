@@ -213,4 +213,3 @@ Certainly! Here's the updated explanation in markdown format suitable for a Git 
    sock.close()
    ```
 
-This markdown text can be directly copied and pasted into your README.md file in a Git repository, providing clear instructions for setting up UDP server and client applications.
