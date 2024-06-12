@@ -20,6 +20,7 @@ HOST = '127.0.0.1'
 while True:
     #Establish the connection
     print('Server is running......')
+    
     #accept the connection
     connection_socket, addr =  # Your code comes here 
     print("Request accepted from (address, port) tuple: %s \n" % (addr,))
@@ -45,7 +46,7 @@ while True:
         connection_socket.send('404 Not Found'.encode())
         #Close client socket
         # Your code comes here
-        
+
     #Close server  socket
     # Your code comes here
 ##
