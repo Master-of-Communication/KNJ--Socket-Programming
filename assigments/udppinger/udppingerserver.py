@@ -6,8 +6,10 @@ import random
 # Create a UDP socket
 # Notice the use of SOCK_DGRAM for UDP packets
 serverSocket = socket(AF_INET, SOCK_DGRAM) # Assign IP address and port number to socket
-serverSocket.bind((gethostbyname(gethostname()), 12000))
-
+serverSocket.bind((gethostbyname(gethostname()), 7001))
+print("Server address:", serverSocket.getsockname()[0])
+print("Server port:", serverSocket.getsockname()[1])
+print("The server is ready to serve...\n")
 while True:
     # Generate random number in the range of 0 to 10
     rand = random.randint(0, 10)
