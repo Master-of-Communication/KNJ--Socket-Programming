@@ -1,3 +1,7 @@
+'''
+Please comment the code 
+'''
+
 # Author:Suman 
 # Aufgabe 2
 # Run the server.py file to start the server, and then run the client.py file to connect to the server.
@@ -5,15 +9,16 @@
 # The server will broadcast messages to all connected clients.
 import socket
 import threading
-# List to keep track of connected clients
+# 
 clients = []
 def handle_client(client_socket):
    while True:
        try:
-           # Receive messages from the client
+           # 
            message = client_socket.recv(1024).decode('utf-8')
            if message:
-               # Broadcast the message to all clients
+               # 
+               
                broadcast(message, client_socket)
            else:
                remove(client_socket)
@@ -24,7 +29,7 @@ def broadcast(message, connection):
    for client in clients:
        if client != connection:
            try:
-               client.send(message.encode('utf-8'))
+               client.send(message.encode('utf-8')) 
            except:
                remove(client)
 def remove(connection):
@@ -32,9 +37,9 @@ def remove(connection):
        clients.remove(connection)
 def main():
    server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-   server.bind(('127.0.0.1', 5555))
+   server.bind(('127.0.0.1', 7001))
    server.listen(100)
-   print("Server started and listening on port 5555")
+   print("Server started and listening on port 7001")
    while True:
        client_socket, addr = server.accept()
        clients.append(client_socket)
