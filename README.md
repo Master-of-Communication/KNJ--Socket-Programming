@@ -1,7 +1,7 @@
 # KNJ-Socket-Programming
 ## Network Communication
 Network communication can be divided into several so-called protocol levelslayer. Figure below shows a greatly simplified version of the OSI layer model,which illustrates the hierarchy of the different protocol levels.
-![network_protocols](pics/network_protocols.png) 
+![network_protocols](assets/network_protocols.png) 
 
 The most rudimentary protocol is at the bottom of the graphic. This is the bare cable via which the data is transmitted in the form of electrical impulses. Based on this, there are somewhat more abstract protocols such as Ethernet and IP. However, the part that is actually interesting for application programmers only starts above the IP protocol, namely the transport protocols TCP and UDP. Both logs will be discussed in detail in the context of sockets in the next section.
 
