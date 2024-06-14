@@ -12,9 +12,11 @@ dont forgent to listen for incoming connections
 '''
 HOST = '127.0.0.1'
 # Your code comes here
+
 # port number
 #associate the server port number with this socket
 #wait and listen for some client to knock on the door, the number of clients that can wait is N>0
+
 # Your code ends here
 
 while True:
