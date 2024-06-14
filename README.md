@@ -40,7 +40,7 @@ As part of its standard library, Python also has [classes](https://docs.python.o
 ## TCP Socket Flow
 We are going to use TCP socket here.
 
-![tcp-socket-fow](pics/tcp.png)
+![tcp-socket-fow](assets/tcp.png)
 
 TCP provides a connection oriented service, since it is based on connections between clients and servers.
 
@@ -140,7 +140,7 @@ This markdown text provides clear instructions for setting up TCP server and cli
 ## UDP Socket Flow
 We are going to use UDP socket here.
 
-![udp-socket-fow](pics/udp.png)
+![udp-socket-fow](assets/udp.png)
 
 UDP is a simple transport-layer protocol. The application writes a message to a UDP socket, which is then encapsulated in a UDP datagram, which is further encapsulated in an IP datagram, which is sent to the destination.
 
